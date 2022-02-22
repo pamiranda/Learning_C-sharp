@@ -1,0 +1,21 @@
+///string firstName = "Bob";
+///string greetings = "Hello ";
+///string message = greetings + " " + firstName + "!";
+///Console.WriteLine(message);
+string firstName = "Bob";
+string greetings = "Hello";
+Console.WriteLine(greetings +" " + firstName + "!");
+///A concatenação de cadeia de caracteres permite combinar cadeias de caracteres literais menores e variáveis em uma única cadeia de caracteres.
+///Evite criar variáveis intermediárias se adicioná-las não aumentar a legibilidade.
+
+//Interpolação de caracteres
+string firstName = "Bob";
+string greetings = "Hello";
+//string message = greetings + " "+ firstName + "!";
+//Forma simplificada
+string message = $"{greetings} {firstName}!";
+Console.Write(message);
+///A interpolação de cadeia de caracteres fornece uma melhoria na concatenação de cadeia de caracteres, reduzindo o número de caracteres necessários em algumas situações.
+Você pode combinar a interpolação de cadeias de caracteres e literais textuais combinando os símbolos para cada um e usando-o como um prefixo para o modelo de cadeia de caracteres.
+string projectName = "First-Project";
+Console.WriteLine($@"C:\Output\{projectName}\Data")
